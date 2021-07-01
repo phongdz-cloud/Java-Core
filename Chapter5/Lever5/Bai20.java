@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baitap {
+public class Bai20 {
     /*
      * Phân tích n thành các thừa số nguyên tố
      */
