@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baitap {
+public class Bai17 {
     /*
      * Nhập vào ngày, tháng, năm. Hỏi từ ngày vừa nhập là ngày thứ bao nhiêu trong
      * năm? (Tính khoảng cách từ ngày đầu năm đến ngày vừa nhập)
@@ -15,7 +15,6 @@ public class Baitap {
         y = scanner.nextInt();
         flag = checkValid(days, d, m, y);
         result = solution(days, d, m, flag);
-    
         output(result);
     }
 
@@ -65,5 +64,4 @@ public class Baitap {
             return true;
         return false;
     }
-
 }
