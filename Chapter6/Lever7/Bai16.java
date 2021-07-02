@@ -1,8 +1,9 @@
 import java.util.Scanner;
 
-public class Baitap {
+public class Bai16 {
     /*
-     * Kiểm tra mảng một chiều các số thực có đối xứng hay không
+     * Viết chương trình kiểm tra các phần tử trong một có lập thành một dãy hình
+     * sin hay không
      */
     static class Param {
         public int n;
@@ -13,25 +14,25 @@ public class Baitap {
 
     public static void main(String[] args) {
         param.n = scanner.nextInt();
-        float[] A;
+        int[] A;
         boolean result;
-        A = new float[param.n];
+        A = new int[param.n];
         input(A);
         result = solution(A);
         output(result);
     }
 
-    static void input(float[] A) {
+    static void input(int[] A) {
         for (int i = 0; i < A.length; i++) {
-            A[i] = scanner.nextFloat();
+            A[i] = scanner.nextInt();
         }
     }
 
-    static boolean solution(float A[]) {
-        int i = 0;
-        int j = A.length - 1;
-        while (j > i) {
-            if (A[i++] != A[j--])
+    static boolean solution(int A[]) {
+        double result;
+        for (int i = 0; i < A.length; i++) {
+            result = Math.sin(A[i]);
+            if (result < -1 || result > 1)
                 return false;
         }
         return true;
@@ -39,9 +40,8 @@ public class Baitap {
 
     static void output(Boolean result) {
         if (result)
-            System.out.print("Mang so thuc doi xung");
+            System.out.println("Lap thanh mot day hinh sin");
         else
-            System.out.print("Mang so thuc khong doi xung");
+            System.out.println("Khong lap thanh mot day hinh sin");
     }
-
 }

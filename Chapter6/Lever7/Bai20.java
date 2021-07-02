@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baitap {
+public class Bai20 {
     /*
      * Kiểm tra mảng một chiều các số thực có đối xứng hay không
      */
