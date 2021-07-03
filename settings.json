@@ -2,6 +2,7 @@
     "java.project.sourcePaths": [
         ".vscode/OOP",
         ".vscode/Chương 1 Hệ thống số",
-        ".vscode/.vscode"
+        ".vscode/.vscode",
+        ".vscode"
     ]
 }

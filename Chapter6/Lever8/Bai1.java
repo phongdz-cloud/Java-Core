@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Baitap {
+public class Bai1 {
     /*
      * Kiểm tra mảng một chiều các số thực có đối xứng hay không
      */
@@ -13,25 +13,25 @@ public class Baitap {
 
     public static void main(String[] args) {
         param.n = scanner.nextInt();
-        float[] A;
+        int[] A;
         boolean result;
-        A = new float[param.n];
+        A = new int[param.n];
         input(A);
         result = solution(A);
         output(result);
     }
 
-    static void input(float[] A) {
+    static void input(int[] A) {
         for (int i = 0; i < A.length; i++) {
-            A[i] = scanner.nextFloat();
+            A[i] = scanner.nextInt();
         }
     }
 
-    static boolean solution(float A[]) {
-        int i = 0;
-        int j = A.length - 1;
-        while (j > i) {
-            if (A[i++] != A[j--])
+    static boolean solution(int A[]) {
+        if (A.length == 1)
+            return false;
+        for (int i = 0; i < A.length - 1; i++) {
+            if ((A[i] + A[i + 1]) % 2 == 0)
                 return false;
         }
         return true;
@@ -39,9 +39,8 @@ public class Baitap {
 
     static void output(Boolean result) {
         if (result)
-            System.out.print("Mang so thuc doi xung");
+            System.out.print("Mang co tinh chat chan le");
         else
-            System.out.print("Mang so thuc khong doi xung");
+            System.out.print("Mang khong co tinh chat chan le");
     }
-
 }
