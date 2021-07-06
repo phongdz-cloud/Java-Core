@@ -1,8 +1,7 @@
 import java.util.Scanner;
 
-
-public class BaiTap {
-    /*
+public class Bai20 {
+      /*
      * Cho mảng A có nA phần tử và mảng B có nB phần tử. Tạo mảng C xen kẽ 1 phần tử
      * mảng A tới phần tử mảng B. các phần tử dư ra (không còn xen kẽ được nữa) thì
      * nối hết vào đuôi mảng C
@@ -53,5 +52,4 @@ public class BaiTap {
             System.out.print(C[i] + " ");
         }
     }
-
 }
