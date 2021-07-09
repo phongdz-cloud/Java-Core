@@ -1,6 +1,7 @@
+
 import java.util.Scanner;
 
-public class BaiTap {
+public class Bai20 {
     /*
      * Cho ma trận vuông A[20][20], có kích thước N. Viết chương trình sắp xếp lại
      * ma trận tăng dần theo dòng và cột
@@ -69,5 +70,4 @@ public class BaiTap {
             System.err.println();
         }
     }
-
 }
